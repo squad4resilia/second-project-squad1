@@ -26,7 +26,7 @@ const searchNames = async searchText =>{
             const html = matches.map((match, index) => `
                 <div class="xii card card-body mb-1 mt-3" onclick="weathermap(${index})">
                     <h4>${match.nome}</h4>
-                    <small id="z${index}">${match.latitude}</small>
+                    <small id="z${index}">${match.fuso_horario}</small>
                     <small id="y${index}">${match.longitude}</small>
                 </div>`)
                 .join('')
