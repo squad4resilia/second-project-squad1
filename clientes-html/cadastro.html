@@ -36,32 +36,32 @@
                             <div class="form-floating mb-3">
                                 <input name="Nome" type="text" class="form-control" id="nome"
                                     placeholder="Insira seu nome." required>
-                                <label for="floatingInput">Nome</label>
+                                <label for="nome">Nome</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" name="E-mail" type="email" id="email"
                                     placeholder="Insira seu E-mail" required>
-                                <label for="floatingPassword">E-mail</label>
+                                <label for="email">E-mail</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control" name="Password" id="senhaum"
                                     placeholder="Insira sua senha" required>
-                                <label for="floatingPassword">Senha</label>
+                                <label for="senhaum">Senha</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input type="password" class="form-control" name="Confirma sua senha" id="senhadois"
                                     onblur="confirmsenha()" placeholder="Confirme sua senha" required>
-                                <label for="floatingPassword">Confirma sua senha</label>
+                                <label for="senhadois">Confirma sua senha</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" name="RG" type="number" id="RG" placeholder="Insira seu RG"
-                                    name="RG" type="number" id="RG" placeholder="Insira seu RG" required>
-                                <label for="floatingPassword">RG</label>
+                                <input class="form-control" name="RG" type="number" id="RG" placeholder="Insira seu RG" required>
+                                <label for="RG">RG</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" name="cep" type="number" id="cep" value="" size="10"
-                                    maxlength="9" onblur="pesquisacep(this.value);" placeholder="Insira seu CEP">
-                                <label for="floatingPassword">CEP</label>
+                                    maxlength="9" onblur="pesquisacep(this.value);" placeholder="Insira seu CEP"
+                                    required>
+                                <label for="cep">CEP</label>
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" name="rua" type="text" id="rua" size="30">
@@ -76,14 +76,15 @@
                                 <label for="floatingPassword">Cidade</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" name="uf" type="text" id="uf" size="2" >
+                                <input class="form-control" name="uf" type="text" id="uf" size="2">
                                 <label for="floatingPassword">Estado</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" name="ibge" type="text" id="ibge" size="8" >
+                                <input class="form-control" name="ibge" type="text" id="ibge" size="8">
                                 <label for="floatingPassword">IBGE</label>
                             </div>
-                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="button" onclick="enviar()">Enviar</button>
+                            <button class="w-100 btn btn-lg btn-primary" type="submit" id="button"
+                                onclick="enviar()">Enviar</button>
                             <hr class="my-4">
                         </form>
                     </div>
@@ -94,9 +95,9 @@
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Serviços</a></li>
-                <li class="nav-item"><a href="contato.html" class="nav-link px-2 text-muted">Contato</a></li>
+                <li class="nav-item"><a href="/index.html" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="/servicos.html" class="nav-link px-2 text-muted">Serviços</a></li>
+                <li class="nav-item"><a href="/contato.html" class="nav-link px-2 text-muted">Contato</a></li>
             </ul>
             <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
         </footer>
