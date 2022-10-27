@@ -14,6 +14,7 @@ function weathermap(x) {
       console.log(result);
       let min = Math.round(result.main.temp_min);
       let max = Math.round(result.main.temp_max);
+      let atual = Math.round(result.main.temp);
       var clima = result.weather[0].description;
       switch (clima) {
         case "clear sky":
@@ -46,6 +47,9 @@ function weathermap(x) {
         case "mist":
           clima = "http://openweathermap.org/img/wn/50d.png"
           break;
+        case "overcast clouds":
+          clima = "http://openweathermap.org/img/wn/04d.png"
+          break;
         default:
           clima = "erro";
       }
@@ -53,6 +57,7 @@ function weathermap(x) {
       $("#weather-temp").html(
         `<div class="xii card card-body mb-3 mt-3">
           <h4>${result.name}<img src="${clima}"></h4>
+          <small>Temperatura Atual: ${atual}°</small>
           <small>Mínima: ${min}°</small>
           <small>Máxima: ${max}°</small>
           <small class="bi bi-droplet">Humidade: ${result.main.humidity}%</small>
