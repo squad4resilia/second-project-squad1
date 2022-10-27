@@ -6,24 +6,6 @@ function confirmsenha(){
         alert("Erro! Senhas diferentes!")
     } 
 }
-function mostrarsenhaum(){
-    let tipo= document.getElementById("senhaum");	
-    if (tipo.type == "password"){
-        tipo.type = "text";
-    }
-    else{
-        tipo.type = "password";
-    }
-}
-function mostrarsenhadois(){
-    let tipo= document.getElementById("senhadois");	
-    if (tipo.type == "password"){
-        tipo.type = "text";
-    }
-    else{
-        tipo.type = "password";
-    }
-}
 
 function enviar(){
     let nome= document.getElementById("nome");
