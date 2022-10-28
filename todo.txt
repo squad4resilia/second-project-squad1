@@ -1,0 +1,10 @@
+1 - revisar pagina de contato.
+1a - adicionar card da Brena.
+1b - adicionar os svgs de contato com o DEV.
+1c - adicionar informações profissionais nos cards de DEV.
+2 - revisar pagina de login, cadastro e recuperar.
+2b - colocar o retorno dos links em todas as paginas.
+3 - revisar pagina de serviços.
+3a - remover os placeholders e adicionar informações reais.
+3b - as cards "AJUDE OS DEVS" e "GRATUITO" devem ser respeitadas, e remover/adicionar apenas os parágrafos.
+4 - implementar a função weathermap com o jQuery.
