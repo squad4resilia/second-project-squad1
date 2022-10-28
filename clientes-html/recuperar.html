@@ -29,8 +29,8 @@
       <form class="p-4 p-md-5 border rounded-3 bg-light">
         <h2>Insira seu email</h2>
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
-          <label for="floatingInput">Insira email de recuperação</label>
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" onblur="validaemail()" required>
+          <label for="floatingInput" onblur="validaemail()">Insira email de recuperação</label>
         </div>
         <button class="w-100 btn btn-lg btn-primary" onclick="mandar()" type="submit" id="enviar">Enviar</button>
         <hr class="my-4">

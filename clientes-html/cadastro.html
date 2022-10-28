@@ -12,19 +12,17 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <header class="d-flex justify-content-center py-3">
-                <ul class="nav nav-pills">
-                    <li class="nav-item"><a href="/index.html" class="nav-link" aria-current="page">Home</a></li>
-                    <li class="nav-item"><a href="/servicos.html" class="nav-link">Serviços</a></li>
-                    <li class="nav-item"><a href="/contato.html" class="nav-link">Contato</a></li>
-                    <li class="nav-item"><a href="/clientes-html/login.html" class="nav-link" id="login">Login</a></li>
-                </ul>
-            </header>
-        </div>
-        <hr>
-    </header>
+    <div class="container">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="/index.html" class="nav-link" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="/servicos.html" class="nav-link">Serviços</a></li>
+                <li class="nav-item"><a href="/contato.html" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="/clientes-html/login.html" class="nav-link" id="login">Login</a></li>
+            </ul>
+        </header>
+    </div>
+    <hr>
     <main>
         <main>
             <div class="container col-xl-10 col-xxl-8 px-4 py-5">
@@ -40,7 +38,7 @@
                             </div>
                             <div class="form-floating mb-3">
                                 <input class="form-control" name="E-mail" type="email" id="email"
-                                    placeholder="Insira seu E-mail" required>
+                                    placeholder="Insira seu E-mail" onblur="validaemail()" required>
                                 <label for="email">E-mail</label>
                             </div>
                             <div class="form-floating mb-3">
@@ -54,7 +52,8 @@
                                 <label for="senhadois">Confirma sua senha</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <input class="form-control" name="RG" type="number" id="RG" placeholder="Insira seu RG" required>
+                                <input class="form-control" name="RG" type="number" onblur="validaRG()" id="RG"
+                                    placeholder="Insira seu RG" required>
                                 <label for="RG">RG</label>
                             </div>
                             <div class="form-floating mb-3">

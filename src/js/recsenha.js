@@ -8,3 +8,9 @@ function mandar() {
         alert("Email de recuperação enviado")
     }
 }
+function validaemail(){
+    let email= document.getElementById("floatingInput").value;
+
+if ((!email.includes("@")) && (!email.includes(".com"))) {
+    alert('Email invalido.');
+}}
