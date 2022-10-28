@@ -14,37 +14,41 @@ function weathermap(x) {
       console.log(result);
       let min = Math.round(result.main.temp_min);
       let max = Math.round(result.main.temp_max);
+      let atual = Math.round(result.main.temp);
       var clima = result.weather[0].description;
       switch (clima) {
         case "clear sky":
-          clima = "http://openweathermap.org/img/wn/01d.png"
+          clima = "https://openweathermap.org/img/wn/01d.png"
           break;
         case "few clouds":
-          clima = "http://openweathermap.org/img/wn/02d.png"
+          clima = "https://openweathermap.org/img/wn/02d.png"
           break;
         case "scattered clouds":
-          clima = "http://openweathermap.org/img/wn/03d.png"
+          clima = "https://openweathermap.org/img/wn/03d.png"
           break;
         case "broken clouds":
-          clima = "http://openweathermap.org/img/wn/04d.png"
+          clima = "https://openweathermap.org/img/wn/04d.png"
           break;
         case "shower rain":
-          clima = "http://openweathermap.org/img/wn/09d.png"
+          clima = "https://openweathermap.org/img/wn/09d.png"
           break;
         case "light rain":
-          clima = "http://openweathermap.org/img/wn/10d.png"
+          clima = "https://openweathermap.org/img/wn/10d.png"
           break;
         case "rain":
-          clima = "http://openweathermap.org/img/wn/10d.png"
+          clima = "https://openweathermap.org/img/wn/10d.png"
           break;
         case "thunderstorm":
-          clima = "http://openweathermap.org/img/wn/11d.png"
+          clima = "https://openweathermap.org/img/wn/11d.png"
           break;
         case "snow":
-          clima = "http://openweathermap.org/img/wn/13d.png"
+          clima = "https://openweathermap.org/img/wn/13d.png"
           break;
         case "mist":
-          clima = "http://openweathermap.org/img/wn/50d.png"
+          clima = "https://openweathermap.org/img/wn/50d.png"
+          break;
+        case "overcast clouds":
+          clima = "https://openweathermap.org/img/wn/04d.png"
           break;
         default:
           clima = "erro";
@@ -53,6 +57,7 @@ function weathermap(x) {
       $("#weather-temp").html(
         `<div class="xii card card-body mb-3 mt-3">
           <h4>${result.name}<img src="${clima}"></h4>
+          <small>Temperatura Atual: ${atual}°</small>
           <small>Mínima: ${min}°</small>
           <small>Máxima: ${max}°</small>
           <small class="bi bi-droplet">Humidade: ${result.main.humidity}%</small>
