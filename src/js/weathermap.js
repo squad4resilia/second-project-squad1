@@ -18,37 +18,37 @@ function weathermap(x) {
       var clima = result.weather[0].description;
       switch (clima) {
         case "clear sky":
-          clima = "http://openweathermap.org/img/wn/01d.png"
+          clima = "https://openweathermap.org/img/wn/01d.png"
           break;
         case "few clouds":
-          clima = "http://openweathermap.org/img/wn/02d.png"
+          clima = "https://openweathermap.org/img/wn/02d.png"
           break;
         case "scattered clouds":
-          clima = "http://openweathermap.org/img/wn/03d.png"
+          clima = "https://openweathermap.org/img/wn/03d.png"
           break;
         case "broken clouds":
-          clima = "http://openweathermap.org/img/wn/04d.png"
+          clima = "https://openweathermap.org/img/wn/04d.png"
           break;
         case "shower rain":
-          clima = "http://openweathermap.org/img/wn/09d.png"
+          clima = "https://openweathermap.org/img/wn/09d.png"
           break;
         case "light rain":
-          clima = "http://openweathermap.org/img/wn/10d.png"
+          clima = "https://openweathermap.org/img/wn/10d.png"
           break;
         case "rain":
-          clima = "http://openweathermap.org/img/wn/10d.png"
+          clima = "https://openweathermap.org/img/wn/10d.png"
           break;
         case "thunderstorm":
-          clima = "http://openweathermap.org/img/wn/11d.png"
+          clima = "https://openweathermap.org/img/wn/11d.png"
           break;
         case "snow":
-          clima = "http://openweathermap.org/img/wn/13d.png"
+          clima = "https://openweathermap.org/img/wn/13d.png"
           break;
         case "mist":
-          clima = "http://openweathermap.org/img/wn/50d.png"
+          clima = "https://openweathermap.org/img/wn/50d.png"
           break;
         case "overcast clouds":
-          clima = "http://openweathermap.org/img/wn/04d.png"
+          clima = "https://openweathermap.org/img/wn/04d.png"
           break;
         default:
           clima = "erro";
